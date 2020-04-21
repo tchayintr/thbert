@@ -1,0 +1,28 @@
+# folders
+######################
+data/*
+log/*
+models/checkpoint/*
+models/evaluation/*
+models/hyperparameter/*
+models/pretraining/*
+models/vocab/*
+wiki_loaders/
+
+# files
+######################
+!*.gitkeep
+
+# caches
+######################
+__pycache__/
+
+# OS generated files 
+######################
+_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
