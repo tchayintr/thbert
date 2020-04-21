@@ -3,7 +3,7 @@
 
 BERT, a pre-trained unsupervised natural language processing model, prepared for fine-tuning to perform NLP downstream tasks significantly.
 
-To enable research oppotunities with very few Thai Computational Linguitic resources, we willingly introduce fundamental language resouces, Thai BERT, for researchers and enthusiast. 
+To enable research oppotunities with very few Thai Computational Linguitic resources, we willingly introduce fundamental language resouces, Thai BERT, build from scratch for researchers and enthusiast. 
 
 ## Pre-trained models
 
@@ -19,3 +19,14 @@ Each .zip file contains three items:
 #### Source
 * **[`thwiki_dump`](https://dumps.wikimedia.org/thwiki/)**
   * https://dumps.wikimedia.org/thwiki/20200401/
+  * More than 800K sentences/paragraphs
+* **[`THAI-NEST`](https://saki.siit.tu.ac.th/kindml/thainest/index.php/download)**: Soon
+  * https://saki.siit.tu.ac.th/kindml/thainest/download/Thai_Nest_a_framework_TheeramunkongT_2010.pdf
+* **[`BEST2010`](http://thailang.nectec.or.th/best/)**: Soon
+* **[`ORCHID`](http://www.hlt.nectec.or.th/orchid/)**: Soon
+
+
+#### Tokenization
+* **[`sentencepiece`](https://github.com/google/sentencepiece)**
+  * unigram
+  * 128K vocabulary size
