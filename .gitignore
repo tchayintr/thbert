@@ -12,6 +12,7 @@ wiki_loaders/
 # files
 ######################
 !*.gitkeep
+*.sh
 
 # caches
 ######################
