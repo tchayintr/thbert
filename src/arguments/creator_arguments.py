@@ -56,16 +56,16 @@ class CreatorArgumentLoader(ArgumentLoader):
         parser = super().get_minimum_parser(args)
 
         # options for model architecture and parameters
-        self.add_creator_basic_option(parser, args)
-        self.add_bert_configs_option(parser, args)
+        self.add_creator_basic_options(parser, args)
+        self.add_bert_configs_options(parser, args)
 
         # depatched options
-        self.add_depatched_option(parser, args)
+        self.add_depatched_options(parser, args)
 
         return parser
 
 
-    def add_creator_basic_option(self, parser, args):
+    def add_creator_basic_options(self, parser, args):
         parser.add_argument('--iterations_per_loop', type=int, default=args.iterations_per_loop)
         parser.add_argument('--max_eval_steps', type=int, default=args.max_eval_steps)
         parser.add_argument('--num_train_steps', type=int, default=args.num_train_steps)
@@ -73,7 +73,7 @@ class CreatorArgumentLoader(ArgumentLoader):
         parser.add_argument('--use_one_hot_embeddings', action='store_true', default=args.use_one_hot_embeddings)
 
 
-    def add_bert_configs_option(self, parser, args):
+    def add_bert_configs_options(self, parser, args):
         parser.add_argument('--attention_probs_dropout_prob', type=float, default=args.attention_probs_dropout_prob)
         parser.add_argument('--directionality', default=args.directionality)
         parser.add_argument('--hidden_act', default=args.hidden_act)
@@ -94,7 +94,7 @@ class CreatorArgumentLoader(ArgumentLoader):
         parser.add_argument('--bert_config_path', type=Path, default=args.bert_config_path)
 
 
-    def add_depatched_option(self, parser, args):
+    def add_depatched_options(self, parser, args):
         parser.add_argument('--use_tpu', action='store_true', default=args.use_tpu)
         parser.add_argument('--tpu_name', default=args.tpu_name)
         parser.add_argument('--tpu_zone', default=args.tpu_zone)

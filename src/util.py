@@ -1,6 +1,7 @@
 import time
 
 
+
 class Time(object):
     def __init__(self):
         self.reset()
@@ -25,6 +26,8 @@ class Time(object):
     def report(self):
         assert self.elapsed > 0
         print('Elapsed time: {} second(s)'.format(self.elapsed))
+
+
 
 if __name__ == '__main__':
     timer = Time()
